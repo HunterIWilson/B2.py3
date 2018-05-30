@@ -1,0 +1,14 @@
+while True:
+  email = input("Enter your Email: ")
+  
+  if " " in email:
+    print("Error: email should not have any spaces")
+  if "." not in email:
+    print("Error: no period")
+  if "@" not in email:
+    print("Error: no @ symbol")
+  if email.find('.') < email.find('@'):
+    print("Error: There must be a . after the @")
+  else:
+    print("Email is valid!")
+    break
